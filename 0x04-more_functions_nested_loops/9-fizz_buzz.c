@@ -13,38 +13,22 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
-			putchar('B');
-			putchar('u');
-			putchar('z');
-			putchar('z');
-			putchar(' ');
+			printf("FizzBuzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			putchar('F');
-			putchar('i');
-			putchar('z');
-			putchar('z');
-			putchar(' ');
+			printf("Fizz ");
 		}
 		else if (i % 5 == 0)
 		{
-			putchar('B');
-			putchar('u');
-			putchar('z');
-			putchar('z');
-			putchar(' ');
+			printf("Buzz ");
 		}
 		else
 		{
 			printf("%d ", i);
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
 
