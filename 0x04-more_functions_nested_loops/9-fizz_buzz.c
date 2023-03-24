@@ -1,38 +1,50 @@
 #include <stdio.h>
 
 /**
- *main - Entry Point.
- *n: A number
+ * main - Entry point
  *
- *Return: 0.
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 1; n <= 100; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if
-			(n % 3 == 0 && n % 5 == 0)
-			{
-				printf("FizzBuzz ");
-			}
-		else if
-			(n % 3 == 0)
-			{
-				printf("Fizz ");
-			}
-		else if
-			(n % 5 == 0)
-			{
-				printf("Buzz ");
-			}
+		if (i % 3 == 0 && i % 5 == 0)
+		{
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
+		}
+		else if (i % 3 == 0)
+		{
+			putchar('F');
+			putchar('i');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
+		}
+		else if (i % 5 == 0)
+		{
+			putchar('B');
+			putchar('u');
+			putchar('z');
+			putchar('z');
+			putchar(' ');
+		}
 		else
 		{
-			printf("%d ", n);
+			printf("%d ", i);
 		}
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
+
