@@ -1,33 +1,18 @@
 #include <stdio.h>
 
-/**
- * print_number - prints an integer
- * @n: the integer to print
- */
-void print_number(int n)
+#include <stdio.h>
+
+int main(void)
 {
-	int divisor = 1;
-	int digit;
-	int negative = 0;
+	int n;
+	int a[5];
+	int *p;
 
-	if (n < 0) {
-		_putchar('-');
-		n = -n;
-		negative = 1;
-	}
+	a[2] = 1024;
+	p = &n;
+	*p = 98; /* added line of code */
+	printf("a[2] = %d\n", a[2]);
 
-	while (n / divisor > 9) {
-		divisor *= 10;
-	}
-
-	while (divisor > 0) {
-		digit = (n / divisor) % 10;
-		_putchar(digit + '0');
-		divisor /= 10;
-	}
-
-	if (negative) {
-		n = -n;
-	}
+	return (0);
 }
 
