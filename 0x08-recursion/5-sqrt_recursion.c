@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _sqrt_helper - helper function to compute the natural square root of a number.
+ * _sqrt_helper - helper function to compute the natural square root of a no.
  * @n: integer.
  * @root: current guess for the square root.
  *
