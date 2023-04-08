@@ -5,18 +5,24 @@
  * main - program that prints its name, followed by a new line.
  * @argc: argument count
  * @argv: argument vector
- * @i: use to iterate the string
+ * @*name: name of program
  *
  * Return: no of arg
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
+	char *name;
 
-	for (i = 0; i < argc; i++)
+	if (argc > 0)
 	{
-		printf("%s\n", argv[i]);
+		name = argv[0];
 	}
+	else
+	{
+		name = "unkown";
+	}
+	printf("%s\n", name);
+
 	return (0);
 }
