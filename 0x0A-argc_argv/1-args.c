@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - Entry Point
  * @argc: argument count.
- * @argv: argument vector.
+ *
  *
  * Return: Number of arguments
  */
 
 int main(int argc, char *argv[])
 {
-	int i;
+	printf("%d\n", argc - 1);
 
-	for (i = 0; i < argc; i++)
+	if (argc > 1)
 	{
-		printf("%d: %s\n", i, argv[i]);
+		printf("%s\n", argv[1]);
 	}
 	return (0);
 }
