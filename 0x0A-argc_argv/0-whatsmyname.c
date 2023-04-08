@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 /**
- * argc - argument count
- * argv - argument vector
- * @i: number of argument passed
+ * main - program that prints its name, followed by a new line.
+ * @argc: argument count
+ * @argv: argument vector
+ * @i: use to iterate the string
  *
- * return: no of arg
+ * Return: no of arg
  */
 
 int main(int argc, char *argv[])
@@ -16,5 +17,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%s\n", argv[i]);
 	}
-	return 0;
+	return (0);
 }
