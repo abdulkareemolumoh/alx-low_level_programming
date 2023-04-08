@@ -3,18 +3,18 @@
 /**
  * main - Entry Point
  * @argc: argument count.
- *
+ * @argv: argument vector
  *
  * Return: Number of arguments
  */
 
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	(void)argv;
 
 	if (argc > 1)
 	{
-		printf("%s\n", argv[1]);
+		printf("%d\n", argc - 1);
 	}
 	return (0);
 }
