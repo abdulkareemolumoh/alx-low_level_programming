@@ -5,12 +5,13 @@
 
 /**
  * new_dog - Entry point
- * @newDog: new dog prop
+ * newDog - new dog prop
  * @name: dog's name
  * @age: dog's age
  * @owner: owner.
  *
  * Description: Dog's prop
+ * Return: newDog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
